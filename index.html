@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+
+<!-- TODO: Add a virtual guest book for hose who cant attend. Probably built on JSON server -->
+<!-- TODO: Hotel info in the area and things to do -->
+<!-- TODO: Parking info -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>K&plus;M&equals;❤️</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <!-- Library CSS -->
+    <link href="css/glanz_library.css" rel="stylesheet" />
+
+    <!-- Icons CSS -->
+    <link href="fonts/themify-icons.css" rel="stylesheet" />
+
+    <!-- Theme CSS -->
+    <link href="css/glanz_style.css" rel="stylesheet" />
+
+    <!-- Autocomplete CSS -->
+    <link href="css/autocomplete.css" rel="stylesheet" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Dosis:300,400,600,700%7COpen+Sans:300,400,700%7CPlayfair+Display:400,400i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Other Fonts -->
+    <link href="fonts/marsha/stylesheet.css" rel="stylesheet" />
+  </head>
+
+  <!-- Body -->
+  <body class="gla_middle_titles">
+    <!-- Page -->
+    <div class="gla_page" id="gla_page">
+      <!-- To Top -->
+      <a href="#gla_page" class="gla_top ti ti-angle-up gla_go"></a>
+
+      <!-- Music -->
+      <div class="gla_music_icon">
+        <i class="ti ti-music"></i>
+      </div>
+      <div class="gla_music_icon_cont"></div>
+
+      <!-- Header -->
+      <header>
+        <nav class="gla_light_nav gla_transp_nav">
+          <div class="container">
+            <div class="gla_logo_container clearfix">
+              <img src="images/rings.png" alt="" class="gla_logo_rev" />
+              <div class="gla_logo_txt">
+                <!-- Logo -->
+                <a href="/" class="gla_logo">Michael & Kelly</a>
+
+                <!-- Text Logo -->
+                <div class="gla_logo_und">October 22, 2022</div>
+              </div>
+            </div>
+
+            <!-- Menu -->
+            <div class="gla_main_menu gla_main_menu_mobile">
+              <div class="gla_main_menu_icon">
+                <i></i><i></i><i></i><i></i>
+                <b>Menu</b>
+                <b class="gla_main_menu_icon_b">Back</b>
+              </div>
+            </div>
+
+            <!-- Menu Content -->
+            <div
+              class="gla_main_menu_content gla_image_bck"
+              data-color="rgba(0,0,0,0.9)"
+              data-image="images/zeta-wedding-16.jpg"
+            >
+              <!-- Over -->
+              <div class="gla_over" data-color="#000" data-opacity="0.7"></div>
+            </div>
+
+            <div class="gla_main_menu_content_menu gla_wht_txt text-right">
+              <div class="container">
+                <ul>
+                  <li style="margin-bottom: 3em">
+                    <a href="/">Home</a>
+                  </li>
+                  <li class="gla_parent" style="margin-bottom: 3em">
+                    <a href="#!">Venue</a>
+                    <ul>
+                      <li>
+                        <a href="#!">Location</a>
+                      </li>
+                      <li>
+                        <a href="#!">Parking</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li style="margin-bottom: 3em">
+                    <a href="#!">Registry</a>
+                  </li>
+                  <li style="margin-bottom: 3em">
+                    <a href="#">R.S.V.P.</a>
+                  </li>
+                </ul>
+                <div class="gla_main_menu_content_menu_copy">
+                  <form>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Search"
+                    />
+                    <button type="submit" class="btn">Search</button>
+                  </form>
+                  <br />
+                  <p>Copyright © 2020 a2zeta</p>
+                </div>
+              </div>
+              <!-- container end -->
+            </div>
+            <!-- menu content end -->
+
+            <!-- Search Block -->
+            <div class="gla_search_block">
+              <div class="gla_search_block_link gla_search_parent">
+                <i class="ti ti-search"></i>
+                <ul>
+                  <li>
+                    <form>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Search"
+                      />
+                      <button type="submit" class="btn">
+                        <i class="ti ti-search"></i>
+                      </button>
+                    </form>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Search Block End -->
+
+            <!-- Top Menu -->
+            <div class="gla_default_menu">
+              <ul>
+                <li>
+                  <a href="/">Home</a>
+                </li>
+
+                <li class="gla_parent">
+                  <a href="#">Venue</a>
+                  <ul>
+                    <li>
+                      <a href="#!">Location</a>
+                    </li>
+                    <li>
+                      <a href="#!">Parking</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Registry</a>
+                </li>
+                <li>
+                  <a
+                    href="#rsvp_section"
+                    style="color: #045E69; font-weight: bold"
+                    >R.S.V.P.</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- Top Menu End -->
+          </div>
+          <!-- container end -->
+        </nav>
+      </header>
+      <!-- Header End -->
+
+      <!-- Slider -->
+      <div id="hero" class="gla_slider gla_image_bck gla_wht_txt gla_fixed">
+      <!-- <div
+        class="gla_slider gla_image_bck gla_wht_txt gla_fixed"
+        data-image="images/mandk-yosemite-1.jpg"
+        data-stellar-background-ratio="0.8"
+      > -->
+        <!-- Over -->
+        <div class="gla_over" data-color="#9abab6" data-opacity="0.2"></div>
+
+        <div class="container">
+          <!-- Slider Texts -->
+          <div class="gla_slide_txt gla_slide_center_bottom text-center">
+            <p>
+              <img
+                src="images/animations/ourwedding_wh.gif"
+                data-top-bottom="@src:images/animations/ourwedding_wh.gif"
+                alt=""
+                height="150"
+              />
+            </p>
+          </div>
+          <!-- Slider Texts End -->
+        </div>
+        <!-- container end -->
+
+        <!-- Slide Down -->
+        <a class="gla_scroll_down gla_go" href="#gla_content">
+          <b></b>
+          Scroll Down
+        </a>
+      </div>
+      <!-- Slider End -->
+
+      <!-- Content -->
+      <section id="gla_content" class="gla_content">
+        <!-- section -->
+        <section class="gla_section gla_image_bck" data-color="#f9fbf7">
+          <div class="container text-center">
+            <p>
+              <img
+                src="images/animations/flowers.gif"
+                data-bottom-top="@src:images/animations/flowers.gif"
+                height="150"
+                alt=""
+              />
+            </p>
+            <h2>Our Story</h2>
+            <h3 class="gla_subtitle">The Fourth of July</h3>
+
+            <p>
+              On the 4th of July 2020 we were lucky enough to get to visit Yosemite National Park, one of our all time favorite places to be. It's an incredibly beautiful place and one that's near and dear to us. At the time, Covid restrictions greatly limited the number of people allowed to visit the park at one time which meant that practically had the whole place to ourselves, it was surreal.
+            </p>
+          </div>
+          <!-- container end -->
+        </section>
+        <!-- section end -->
+
+        <!-- section -->
+        <section
+          class="gla_section gla_image_bck gla_fixed gla_wht_txt"
+          data-stellar-background-ratio="0.8"
+          data-image="images/hilltop/Hilltop-29.jpeg"
+        >
+          <!-- Over -->
+          <div class="gla_over" data-color="#282828" data-opacity="0.4"></div>
+
+          <div class="container text-center">
+            <p>
+              <img
+                src="images/animations/savethedate_wh.gif"
+                data-bottom-top="@src:images/animations/savethedate_wh.gif"
+                height="150"
+                alt=""
+              />
+            </p>
+            <h2>October 22nd, 2022</h2>
+            <h3 class="gla_subtitle">
+              111 Hilltop Crescent, Walnut Creek, CA 94597
+            </h3>
+            <div
+              class="gla_countdown"
+              data-year="2022"
+              data-month="10"
+              data-day="22"
+            ></div>
+          </div>
+          <!-- container end -->
+        </section>
+        <!-- section end -->
+
+        <!-- section -->
+        <section class="gla_section">
+          <div class="container text-center">
+            <p>
+              <img
+                src="images/animations/flowers2.gif"
+                data-bottom-top="@src:images/animations/flowers2.gif"
+                height="150"
+                alt=""
+              />
+            </p>
+            <h2>Wedding Details</h2>
+            
+            <p>
+              The ceremony and reception will be held at Kelly's childhood
+              home. Located in Walnut Creek CA, it has a beautiful, unobstructed
+              view of the Bay Area.
+            </p>
+            <!-- boxes -->
+            <div class="gla_icon_boxes row text-left">
+              <!-- item -->
+              <div class="col-md-4 col-sm-6">
+                <a href="#" class="gla_news_block">
+                  <span class="gla_news_img">
+                    <span
+                      class="gla_over"
+                      data-image="images/hilltop/Hilltop-29.jpeg"
+                    ></span>
+                  </span>
+
+                  <span class="gla_news_title">The Venue</span>
+                  <p>
+                    <strong>111 Hilltop Crescent</strong><br />The ceremony and reception will be Kelly's Dad's house in Walnut Creek, CA.
+                  </p>
+                </a>
+              </div>
+
+              <!-- item -->
+              <div class="col-md-4 col-sm-6">
+                <a href="#" class="gla_news_block">
+                  <span class="gla_news_img">
+                    <span
+                      class="gla_over"
+                      data-image="images/hilltop/Hilltop-04.jpeg"
+                    ></span>
+                  </span>
+
+                  <span class="gla_news_title">Parking</span>
+                  <p>
+                    There is limited parking at the house but a shuttle service from lot the
+                   down the street.
+                  </p>
+                </a>
+              </div>
+              <!-- item -->
+              <div class="col-md-4 col-sm-6">
+                <a href="#" class="gla_news_block">
+                  <span class="gla_news_img">
+                    <span
+                      class="gla_over"
+                      data-image="images/hilltop/Hilltop-23.jpeg"
+                    ></span>
+                  </span>
+
+                  <span class="gla_news_title">Recreation & Lodging</span>
+                  <p>
+                    <strong>Walnut Creek, CA</strong>. <br />Our recommendations for hotels, and fun things to do in the area.
+                  </p>
+                </a>
+              </div>
+            </div>
+            <!-- boxes end -->
+          </div>
+          <!-- container end -->
+        </section>
+        <!-- section end -->
+
+        <!-- section -->
+        <section
+          class="gla_section gla_image_bck gla_fixed gla_wht_txt"
+          data-stellar-background-ratio="0.8"
+          data-image="images/cancun-1.jpg"
+        >
+          <!-- Over -->
+          <div class="gla_over" data-color="#282828" data-opacity="0.4"></div>
+
+          <div class="container text-center">
+            <p>
+              <img
+                src="images/animations/just_wh.gif"
+                data-bottom-top="@src:images/animations/just_wh.gif"
+                height="150"
+                alt=""
+              />
+            </p>
+            <h3>The Honeymoon</h3>
+            <h4 class="gla_subtitle">Cancun Mexico</h4>
+            <p>
+              Your presence is already a gift, but if you are feeling extra
+              generous, we would love for you to contribute to our honeymoon!
+              Experiences are more important to us than material objects, and
+              traveling is our favorite thing to do together. We are beyond
+              excited to visit Cancun for our honeymoon and have the experience
+              of a lifetime. If you still would like to give us something to
+              update our home, we also have a few physical items on the
+              registry. Your contributions mean the world to us, so thank you.
+            </p>
+          </div>
+          <!-- container end -->
+        </section>
+        <!-- section end -->
+
+        <!-- section -->
+        <section class="gla_section gla_image_bck">
+          <div class="container text-center">
+            <p>
+              <img
+                src="images/animations/flowers3.gif"
+                data-bottom-top="@src:images/animations/flowers3.gif"
+                height="130"
+                alt=""
+              />
+            </p>
+            <h2>Registry</h2>
+            <!-- @ Zola's default HTML widget -->
+            <a
+              class="zola-registry-embed"
+              href="www.zola.com/registry/kellyandmichael2022"
+              data-registry-key="kellyandmichael2022"
+              >Our Wedding Registry from Zola</a
+            >
+            <script>
+              !(function (e, t, n) {
+                var s,
+                  a = e.getElementsByTagName(t)[0];
+                e.getElementById(n) ||
+                  ((s = e.createElement(t)),
+                  (s.id = n),
+                  (s.async = !0),
+                  (s.src = "https://widget.zola.com/js/widget.js"),
+                  a.parentNode.insertBefore(s, a));
+              })(document, "script", "zola-wjs");
+            </script>
+          </div>
+
+          <!-- container end -->
+        </section>
+        <!-- section end -->
+
+        <!--* RSVP section -->
+
+        <section class="gla_section" id="rsvp_section">
+          <div class="container text-center">
+            <p>
+              <img
+                src="images/animations/rsvp.gif"
+                data-bottom-top="@src:images/animations/rsvp.gif"
+                height="180"
+                alt="RSVP GIF"
+              />
+            </p>
+
+            <div class="row">
+              <div class="col-md-8 col-md-push-2" style="text-align: left;">
+                <form action="https://formspree.io/f/mjvaqbna" method="POST">
+                
+                  <div class="row">
+                    <div class="col-md-9">
+                      <label>Your full name<small>*</small></label>
+                      <input
+                        type="text"
+                        name="name"
+                        class="form-control form-opacity"
+                        required
+                        minlength='4'
+                      />
+                    </div>
+                    <div class="col-md-3">
+                      <label>Your invitation code</label>
+                      <input
+                      required
+                        type="text"
+                        name="code"
+                        class="form-control form-opacity"
+                        maxlength="4"
+                        minlength="4"
+                      />
+                    </div>
+
+                    <div class="col-md-6">
+                      <label>Will you attend?<small>*</small></label>
+                      <label>
+                        <input
+                        required
+                          type="radio"
+                          name="attend"
+                          value="Attending"
+                        />
+                        <span>Happy to attend.</span><br />
+                      </label>
+                      <label>
+                        <input
+                          type="radio"
+                          name="attend"
+                          value="Declining"
+                        />
+                        <span>Sorry to decline.</span>
+                      </label>
+                    </div>
+                    <!-- <div class="col-md-6">
+                      <label>Meal preference</label>
+                      <select name="meal" class="form-control form-opacity">
+                        <option value="I eat anything">I eat anything</option>
+                        <option value="Beef">Beef</option>
+                        <option value="Chicken">Chicken</option>
+                        <option value="Vegetarian">Vegetarian</option>
+                      </select>
+                    </div> -->
+                    <div class="row">
+                    <div class="col-md-12">
+                      <label>Message</label>
+                      <textarea
+                        name="message"
+                        class="form-control form-opacity"
+                        maxlength="1500"
+                      ></textarea>
+                    </div>
+                  </div>
+                    <div class="col-md-12">
+                      <input type="submit" class="btn submit" value="Send" id='submit_button' style="background-color: #045E69;" />
+                    </div>
+                  </div>
+                  
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- container end -->
+        </section>
+        <!-- section end -->
+        <!--* RSVP section end -->
+        <!-- <section id="rsvp_section" class="gla_section"></section> -->
+
+        <!-- section -->
+        <section
+          class="gla_section gla_image_bck gla_fixed gla_wht_txt"
+          data-stellar-background-ratio="0.6"
+          data-image="images/zeta-wedding-18.jpg"
+        >
+          <!-- Over -->
+          <div class="gla_over" data-color="#282828" data-opacity="0.4"></div>
+
+          <div class="container text-center">
+            <p>
+              <img
+                src="images/animations/thnyou_wh.gif"
+                alt=""
+                height="200"
+                data-bottom-top="@src:images/animations/thnyou_wh.gif"
+              />
+            </p>
+          </div>
+          <!-- container end -->
+        </section>
+        <!-- section end -->
+      </section>
+      <!-- Content End -->
+    </div>
+    <!-- Page End -->
+
+    <!-- JQuery -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <!-- Library JS -->
+    <script src="js/glanz_library.js"></script>
+
+    <!-- Theme JS -->
+    <script src="js/glanz_script.js"></script>
+    <!-- Autocomplete Script -->
+    <!-- <script src="js/autocomplete.js"></script> -->
+  </body>
+</html>
