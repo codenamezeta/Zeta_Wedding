@@ -639,7 +639,8 @@ textarea.form-control {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-  background: rgba(0, 0, 0, 0.2);
+  background: #045e69;
+  color: white;
   padding: 12px 15px;
   line-height: inherit;
   vertical-align: top;
@@ -744,7 +745,7 @@ textarea.form-control {
 }
 .btn:hover {
   color: #fff;
-  background: rgba(0, 0, 0, 0.6);
+  background: #047f8b;
 }
 .gla_wht_txt .btn {
   background: rgba(0, 0, 0, 0.6);
@@ -2264,6 +2265,19 @@ header nav.gla_transp_nav a {
 }
 .gla_header_search_cont input {
   margin-bottom: 0;
+}
+
+/** Custom **/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
 }
 
 /*===============================================*/

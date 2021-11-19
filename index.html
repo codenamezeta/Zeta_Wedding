@@ -180,7 +180,17 @@
         </nav>
       </header>
       <!-- Header End -->
-
+      <script src="https://sdk.scdn.co/spotify-player.js"></script>
+      <script>
+      window.onSpotifyWebPlaybackSDKReady = () => {
+        const userAccessToken = "[access token]";
+        const webPlayback = new Spotify.Player({
+          name: "Spotify Web Playback SDK",
+          getOAuthToken: callback => { callback(userAccessToken)}
+        });
+        webPlayback.connect();
+      };
+      </script>
       <!-- Slider -->
       <div id="hero" class="gla_slider gla_image_bck gla_wht_txt gla_fixed">
       <!-- <div
@@ -453,11 +463,11 @@
                       <label>Your invitation code</label>
                       <input
                       required
-                        type="text"
+                        type="number"
+                        min="1022"
+                        max="1022"
                         name="code"
                         class="form-control form-opacity"
-                        maxlength="4"
-                        minlength="4"
                       />
                     </div>
 
@@ -481,27 +491,28 @@
                         <span>Sorry to decline.</span>
                       </label>
                     </div>
-                    <!-- <div class="col-md-6">
-                      <label>Meal preference</label>
+                    <div class="col-md-6">
+                      <label>Dietary Preference</label>
                       <select name="meal" class="form-control form-opacity">
-                        <option value="I eat anything">I eat anything</option>
-                        <option value="Beef">Beef</option>
-                        <option value="Chicken">Chicken</option>
+                        <option value="I eat anything">I'll eat anything</option>
+                        <option value="Lactose Free">Lactose Free</option>
+                        <option value="Vegan">Vegan</option>
                         <option value="Vegetarian">Vegetarian</option>
+                        <option value="Gluten Free">Gluten Free</option>
                       </select>
-                    </div> -->
+                    </div>
                     <div class="row">
                     <div class="col-md-12">
                       <label>Message</label>
                       <textarea
                         name="message"
                         class="form-control form-opacity"
-                        maxlength="1500"
+                        maxlength="500"
                       ></textarea>
                     </div>
                   </div>
                     <div class="col-md-12">
-                      <input type="submit" class="btn submit" value="Send" id='submit_button' style="background-color: #045E69;" />
+                      <input type="submit" class="btn submit" value="Send" id='submit_button' />
                     </div>
                   </div>
                   
