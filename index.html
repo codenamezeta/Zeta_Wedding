@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 
 <!-- TODO: Add a virtual guest book for hose who cant attend. Probably built on JSON server -->
-<!-- TODO: Hotel info in the area and things to do -->
-<!-- TODO: Parking info -->
+
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -39,13 +38,15 @@
     <!-- Page -->
     <div class="gla_page" id="gla_page">
       <!-- To Top -->
-      <a href="#gla_page" class="gla_top ti ti-angle-up gla_go"></a>
+      <a href="#gla_page" class="gla_top ti ti-angle-up gla_go text-highlight"></a>
 
-      <!-- Music -->
-      <div class="gla_music_icon">
-        <i class="ti ti-music"></i>
-      </div>
-      <div class="gla_music_icon_cont"></div>
+<!-- Music -->
+<div class="gla_music_icon">
+  <i class="ti ti-music" style="color: #CC5500;"></i>
+</div>
+<div class="gla_music_icon_cont">
+  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xnemkAxwS5E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
       <!-- Header -->
       <header>
@@ -53,7 +54,7 @@
           <div class="container">
             <div class="gla_logo_container clearfix">
               <img src="images/rings.png" alt="" class="gla_logo_rev" />
-              <div class="gla_logo_txt">
+              <div class="gla_logo_txt text-shadow">
                 <!-- Logo -->
                 <a href="/" class="gla_logo">Michael & Kelly</a>
 
@@ -88,21 +89,30 @@
                     <a href="/">Home</a>
                   </li>
                   <li class="gla_parent" style="margin-bottom: 3em">
-                    <a href="#!">Venue</a>
+                    <a href="details.html">Details</a>
                     <ul>
                       <li>
-                        <a href="#!">Location</a>
+                        <a href="details.html#venue">Venue</a>
                       </li>
                       <li>
-                        <a href="#!">Parking</a>
+                        <a href="details.html#lodging">Lodging</a>
+                      </li>
+                      <li>
+                        <a href="details.html#parking">Parking</a>
+                      </li>
+                      <li>
+                        <a href="details.html#recreation">Things To Do</a>
                       </li>
                     </ul>
                   </li>
                   <li style="margin-bottom: 3em">
-                    <a href="#!">Registry</a>
+                    <a href="/#registry">Registry</a>
                   </li>
                   <li style="margin-bottom: 3em">
-                    <a href="#">R.S.V.P.</a>
+                    <a href="./#gallery">Gallery</a>
+                  </li>
+                  <li style="margin-bottom: 3em">
+                    <a href="/#rsvp_section">R.S.V.P.</a>
                   </li>
                 </ul>
                 <div class="gla_main_menu_content_menu_copy">
@@ -114,8 +124,6 @@
                     />
                     <button type="submit" class="btn">Search</button>
                   </form>
-                  <br />
-                  <p>Copyright © 2020 a2zeta</p>
                 </div>
               </div>
               <!-- container end -->
@@ -148,27 +156,36 @@
             <div class="gla_default_menu">
               <ul>
                 <li>
-                  <a href="/">Home</a>
+                  <a href="/" class="text-shadow">Home</a>
                 </li>
 
                 <li class="gla_parent">
-                  <a href="#">Venue</a>
+                  <a href="./details.html" class="text-shadow">Details</a>
                   <ul>
                     <li>
-                      <a href="#!">Location</a>
+                      <a href="./details.html#venue">Venue</a>
                     </li>
                     <li>
-                      <a href="#!">Parking</a>
+                      <a href="./details.html#lodging">Lodging</a>
+                    </li>
+                    <li>
+                      <a href="./details.html#parking">Parking</a>
+                    </li>
+                    <li>
+                      <a href="./details.html#recreation">Things To Do</a>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <a href="#">Registry</a>
+                  <a href="#registry" class="text-shadow">Registry</a>
+                </li>
+                <li>
+                  <a href="#gallery" class="text-shadow">Gallery</a>
                 </li>
                 <li>
                   <a
                     href="#rsvp_section"
-                    style="color: #045E69; font-weight: bold"
+                    style="color: #057a7a; font-weight: bold; text-shadow: #001a1a -1px 1px;"
                     >R.S.V.P.</a
                   >
                 </li>
@@ -203,13 +220,13 @@
 
         <div class="container">
           <!-- Slider Texts -->
-          <div class="gla_slide_txt gla_slide_center_bottom text-center">
+          <div class="gla_slide_txt gla_slide_center_middle text-center">
             <p>
               <img
                 src="images/animations/ourwedding_wh.gif"
                 data-top-bottom="@src:images/animations/ourwedding_wh.gif"
                 alt=""
-                height="150"
+                height="350"
               />
             </p>
           </div>
@@ -242,7 +259,7 @@
             <h3 class="gla_subtitle">The Fourth of July</h3>
 
             <p>
-              On the 4th of July 2020 we were lucky enough to get to visit Yosemite National Park, one of our all time favorite places to be. It's an incredibly beautiful place and one that's near and dear to us. At the time, Covid restrictions greatly limited the number of people allowed to visit the park at one time which meant that practically had the whole place to ourselves, it was surreal.
+              On the 4th of July 2020 we were lucky enough to get to visit Yosemite National Park, one of our all time favorite places to be. It's an incredibly beautiful place and one that's near and dear to us. At the time, Covid restrictions greatly limited the number of people allowed to visit the park at one time which meant that practically had the whole place to ourselves, it was surreal. So, it seemed like the perfect place to get engaged.
             </p>
           </div>
           <!-- container end -->
@@ -296,15 +313,13 @@
             <h2>Wedding Details</h2>
             
             <p>
-              The ceremony and reception will be held at Kelly's childhood
-              home. Located in Walnut Creek CA, it has a beautiful, unobstructed
-              view of the Bay Area.
+              Be sure to read through <a href="details.html">the details page</a> or click on a box below or view important information about the wedding.
             </p>
             <!-- boxes -->
             <div class="gla_icon_boxes row text-left">
               <!-- item -->
               <div class="col-md-4 col-sm-6">
-                <a href="#" class="gla_news_block">
+                <a href="./details.html#venue" class="gla_news_block">
                   <span class="gla_news_img">
                     <span
                       class="gla_over"
@@ -321,7 +336,7 @@
 
               <!-- item -->
               <div class="col-md-4 col-sm-6">
-                <a href="#" class="gla_news_block">
+                <a href="./details.html#parking" class="gla_news_block">
                   <span class="gla_news_img">
                     <span
                       class="gla_over"
@@ -331,14 +346,13 @@
 
                   <span class="gla_news_title">Parking</span>
                   <p>
-                    There is limited parking at the house but a shuttle service from lot the
-                   down the street.
+                    <strong>Park on Rosemont Ct.</strong><br />Parking is limited at the house but there's space on Rosemont and a shuttle up the hill.
                   </p>
                 </a>
               </div>
               <!-- item -->
               <div class="col-md-4 col-sm-6">
-                <a href="#" class="gla_news_block">
+                <a href="./details.html#lodging" class="gla_news_block">
                   <span class="gla_news_img">
                     <span
                       class="gla_over"
@@ -380,14 +394,14 @@
             <h3>The Honeymoon</h3>
             <h4 class="gla_subtitle">Cancun Mexico</h4>
             <p>
-              Your presence is already a gift, but if you are feeling extra
-              generous, we would love for you to contribute to our honeymoon!
-              Experiences are more important to us than material objects, and
+              Your presence at our wedding is already a gift, but... if you are feeling extra
+              generous, we would love for you to contribute to our honeymoon fund!
+              Experiences are more important to us than things, and
               traveling is our favorite thing to do together. We are beyond
               excited to visit Cancun for our honeymoon and have the experience
               of a lifetime. If you still would like to give us something to
               update our home, we also have a few physical items on the
-              registry. Your contributions mean the world to us, so thank you.
+              registry. Your contributions mean the world to us, so thank you!
             </p>
           </div>
           <!-- container end -->
@@ -395,7 +409,7 @@
         <!-- section end -->
 
         <!-- section -->
-        <section class="gla_section gla_image_bck">
+        <section id="registry" class="gla_section gla_image_bck">
           <div class="container text-center">
             <p>
               <img
@@ -415,6 +429,7 @@
             >
             <script>
               !(function (e, t, n) {
+                console.log("t: ", t);
                 var s,
                   a = e.getElementsByTagName(t)[0];
                 e.getElementById(n) ||
@@ -430,6 +445,257 @@
           <!-- container end -->
         </section>
         <!-- section end -->
+
+        <section id="gallery" class="gla_section gla_image_bck">
+            
+            
+          <div class="container text-center">
+              <p><img src="images/animations/flowers3.gif" data-bottom-top="@src:images/animations/flowers3.gif" height="130" alt=""></p>
+              <h2>Photo Gallery</h2>
+              <p>Some highlights from our engagement photo shoot.</p>
+              
+              <!-- filters -->
+              <!-- <div class="button-group filter-button-group">
+                  <a data-filter="*">Show All</a>
+                  <a data-filter=".engagement">Engagement</a>
+                  <a data-filter=".ceremony">Ceremony</a>
+              </div> -->
+              <!-- filters end -->
+
+              <!-- grid -->
+              <div class="gla_portfolio_no_padding grid">
+                  
+                  <!-- item -->
+                  <div class="col-sm-4 gla_anim_box grid-item ceremony">
+                      <div class="gla_shop_item">
+                          <a href="./images/Engagement-1.jpg" class="lightbox">
+                              <img src="./images/Engagement-1.jpg" alt="">
+                          </a>
+                      </div>
+                  </div>
+
+                  <!-- item -->
+                  <div class="col-sm-4 gla_anim_box grid-item engagement">
+                      <div class="gla_shop_item">
+                          <a href="./images/Engagement-2.jpg" class="lightbox">
+                              <img src="./images/Engagement-2.jpg" alt="">
+                          </a>
+                      </div>
+                  </div>
+
+
+                  <!-- item -->
+                  <div class="col-sm-4 gla_anim_box grid-item ceremony">
+                      <div class="gla_shop_item">
+                          <a href="./images/Engagement-3.jpg" class="lightbox">
+                              <img src="./images/Engagement-3.jpg" alt="">
+                          </a>
+                      </div>
+                  </div>
+
+
+                  <!-- item -->
+                  <div class="col-sm-4 gla_anim_box grid-item engagement">
+                      <div class="gla_shop_item">
+                          <a href="./images/Engagement-4.jpg" class="lightbox">
+                              <img src="./images/Engagement-4.jpg" alt="">
+                          </a>
+                      </div>
+                  </div>
+
+
+                  <!-- item -->
+                  <div class="col-sm-4 gla_anim_box grid-item ceremony">
+                      <div class="gla_shop_item">
+                          <a href="./images/Engagement-5.jpg" class="lightbox">
+                              <img src="./images/Engagement-5.jpg" alt="">
+                          </a>
+                      </div>
+                  </div>
+
+
+                  <!-- item -->
+                  <div class="col-sm-4 gla_anim_box grid-item engagement">
+                      <div class="gla_shop_item">
+                          <a href="./images/Engagement-6.jpg" class="lightbox">
+                              <img src="./images/Engagement-6.jpg" alt="">
+                          </a>
+                      </div>
+                  </div>
+                  
+                  <!-- item -->
+                  <div class="col-sm-4 gla_anim_box grid-item ceremony">
+                      <div class="gla_shop_item">
+                          <a href="./images/Engagement-7.jpg" class="lightbox">
+                              <img src="./images/Engagement-7.jpg" alt="">
+                          </a>
+                      </div>
+                  </div>
+
+
+                  <!-- item -->
+                  <div class="col-sm-4 gla_anim_box grid-item engagement">
+                      <div class="gla_shop_item">
+                          <a href="./images/Engagement-8.jpg" class="lightbox">
+                              <img src="./images/Engagement-8.jpg" alt="">
+                          </a>
+                      </div>
+                  </div>
+                  
+                  <!-- item -->
+                  <div class="col-sm-4 gla_anim_box grid-item engagement">
+                      <div class="gla_shop_item">
+                          <a href="./images/Engagement-9.jpg" class="lightbox">
+                              <img src="./images/Engagement-9.jpg" alt="">
+                          </a>
+                      </div>
+                  </div>
+                      
+
+                  <!-- item -->
+                  <div class="col-sm-4 gla_anim_box grid-item ceremony">
+                      <div class="gla_shop_item">
+                          <a href="./images/Engagement-10.jpg" class="lightbox">
+                              <img src="./images/Engagement-10.jpg" alt="">
+                          </a>
+                      </div>
+                  </div>
+                  
+                  <!-- item -->
+                  <div class="col-sm-4 gla_anim_box grid-item engagement">
+                      <div class="gla_shop_item">
+                          <a href="./images/Engagement-11.jpg" class="lightbox">
+                              <img src="./images/Engagement-11.jpg" alt="">
+                          </a>
+                      </div>
+                  </div>
+                  
+                  <!-- item -->
+                  <div class="col-sm-4 gla_anim_box grid-item ceremony">
+                      <div class="gla_shop_item">
+                          <a href="./images/Engagement-12.jpg" class="lightbox">
+                              <img src="./images/Engagement-12.jpg" alt="">
+                          </a>
+                      </div>
+                  </div>
+                  
+                  <!-- item -->
+                  <div class="col-sm-4 gla_anim_box grid-item engagement">
+                      <div class="gla_shop_item">
+                          <a href="./images/Engagement-13.jpg" class="lightbox">
+                              <img src="./images/Engagement-13.jpg" alt="">
+                          </a>
+                      </div>
+                  </div>
+                  
+                  <!-- item -->
+                  <div class="col-sm-4 gla_anim_box grid-item engagement">
+                      <div class="gla_shop_item">
+                          <a href="./images/Engagement-14.jpg" class="lightbox">
+                              <img src="./images/Engagement-14.jpg" alt="">
+                          </a>
+                      </div>
+                  </div>
+                  
+                  <!-- item -->
+                  <div class="col-sm-4 gla_anim_box grid-item ceremony">
+                      <div class="gla_shop_item">
+                          <a href="./images/Engagement-15.jpg" class="lightbox">
+                              <img src="./images/Engagement-15.jpg" alt="">
+                          </a>
+                      </div>
+                  </div>
+                  
+                  <!-- item -->
+                  <div class="col-sm-4 gla_anim_box grid-item engagement">
+                      <div class="gla_shop_item">
+                          <a href="./images/Engagement-16.jpg" class="lightbox">
+                              <img src="./images/Engagement-16.jpg" alt="">
+                          </a>
+                      </div>
+                  </div>
+                  
+                  <!-- item -->
+                  <div class="col-sm-4 gla_anim_box grid-item engagement">
+                      <div class="gla_shop_item">
+                          <a href="./images/Engagement-17.jpg" class="lightbox">
+                              <img src="./images/Engagement-17.jpg" alt="">
+                          </a>
+                      </div>
+                  </div>
+                  
+                  <!-- item -->
+                  <div class="col-sm-4 gla_anim_box grid-item engagement">
+                      <div class="gla_shop_item">
+                          <a href="./images/Engagement-18.jpg" class="lightbox">
+                              <img src="./images/Engagement-18.jpg" alt="">
+                          </a>
+                      </div>
+                  </div>
+                  
+                  <!-- item -->
+                  <div class="col-sm-4 gla_anim_box grid-item engagement">
+                      <div class="gla_shop_item">
+                          <a href="./images/Engagement-19.jpg" class="lightbox">
+                              <img src="./images/Engagement-19.jpg" alt="">
+                          </a>
+                      </div>
+                  </div>
+                  
+                  <!-- item -->
+                  <div class="col-sm-4 gla_anim_box grid-item engagement">
+                      <div class="gla_shop_item">
+                          <a href="./images/Engagement-20.jpg" class="lightbox">
+                              <img src="./images/Engagement-20.jpg" alt="">
+                          </a>
+                      </div>
+                  </div>
+                  
+                  <!-- item -->
+                  <div class="col-sm-4 gla_anim_box grid-item engagement">
+                      <div class="gla_shop_item">
+                          <a href="./images/Engagement-21.jpg" class="lightbox">
+                              <img src="./images/Engagement-21.jpg" alt="">
+                          </a>
+                      </div>
+                  </div>
+                  
+                  <!-- item -->
+                  <div class="col-sm-4 gla_anim_box grid-item engagement">
+                      <div class="gla_shop_item">
+                          <a href="./images/Engagement-22.jpg" class="lightbox">
+                              <img src="./images/Engagement-22.jpg" alt="">
+                          </a>
+                      </div>
+                  </div>
+                  
+                  <!-- item -->
+                  <div class="col-sm-4 gla_anim_box grid-item engagement">
+                      <div class="gla_shop_item">
+                          <a href="./images/Engagement-23.jpg" class="lightbox">
+                              <img src="./images/Engagement-23.jpg" alt="">
+                          </a>
+                      </div>
+                  </div>
+                  
+                  <!-- item -->
+                  <div class="col-sm-4 gla_anim_box grid-item engagement">
+                      <div class="gla_shop_item">
+                          <a href="./images/Engagement-24.jpg" class="lightbox">
+                              <img src="./images/Engagement-24.jpg" alt="">
+                          </a>
+                      </div>
+                  </div>
+
+
+               </div>
+               <!-- grid end -->
+              
+          </div>
+          <!-- container end -->
+
+      </section>
+      <!-- section end -->
 
         <!--* RSVP section -->
 
@@ -524,13 +790,13 @@
         </section>
         <!-- section end -->
         <!--* RSVP section end -->
-        <!-- <section id="rsvp_section" class="gla_section"></section> -->
 
         <!-- section -->
         <section
           class="gla_section gla_image_bck gla_fixed gla_wht_txt"
-          data-stellar-background-ratio="0.6"
-          data-image="images/zeta-wedding-18.jpg"
+          data-stellar-background-ratio="0.4"
+          data-image="images/engagement-2.jpg"
+          data-height="750px"
         >
           <!-- Over -->
           <div class="gla_over" data-color="#282828" data-opacity="0.4"></div>

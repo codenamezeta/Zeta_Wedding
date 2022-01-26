@@ -76,9 +76,25 @@
 /* ! My custom CSS */
 #hero {
   height: 100vh;
-  background-image: url('../images/mandk-yosemite-1.jpg');
-  background-position: bottom;
+  background-image: url('../images/engagement-11.jpg');
+  background-position: center;
   background-size: cover;
+}
+
+.text-shadow {
+  text-shadow: #000 1px 2px 4px;
+}
+
+.gla_first_step nav .text-shadow {
+  text-shadow: none;
+}
+
+.text-highlight {
+  text-shadow: #fff 1px 2px 2px, #000 1px 3px 4px;
+}
+
+.bigger-text {
+  font-size: 1.33em;
 }
 
 /* ! /My Custom CSS */
