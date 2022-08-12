@@ -28,6 +28,18 @@
 
     <!-- Other Fonts -->
     <link href="fonts/marsha/stylesheet.css" rel="stylesheet" />
+    <style>
+      .things-to-do-list {
+        text-align: left; margin: 0 auto;
+      }
+      .things-to-do-list li {
+        margin-bottom: 1em;
+      }
+      .things-to-do-list li a {
+        color: teal;
+        text-decoration: underline;
+      }
+    </style>
   </head>
 
   <!-- Body -->
@@ -79,28 +91,14 @@
               <div class="gla_over" data-color="#000" data-opacity="0.7"></div>
             </div>
 
-            <div class="gla_main_menu_content_menu gla_wht_txt text-right">
+            <div class="gla_main_menu_content_menu gla_wht_txt text-right toggle_menu">
               <div class="container">
                 <ul>
                   <li style="margin-bottom: 3em">
                     <a href="/">Home</a>
                   </li>
-                  <li class="gla_parent" style="margin-bottom: 3em">
+                  <li style="margin-bottom: 3em">
                     <a href="details.html">Details</a>
-                    <ul>
-                      <li>
-                        <a href="#venue">Venue</a>
-                      </li>
-                      <li>
-                        <a href="#lodging">Lodging</a>
-                      </li>
-                      <li>
-                        <a href="#parking">Parking</a>
-                      </li>
-                      <li>
-                        <a href="#recreation">Things To Do</a>
-                      </li>
-                    </ul>
                   </li>
                   <li style="margin-bottom: 3em">
                     <a href="/#registry">Registry</a>
@@ -112,7 +110,7 @@
                     <a href="/#rsvp_section">R.S.V.P.</a>
                   </li>
                 </ul>
-                <div class="gla_main_menu_content_menu_copy">
+                <!-- <div class="gla_main_menu_content_menu_copy">
                   <form>
                     <input
                       type="text"
@@ -121,14 +119,14 @@
                     />
                     <button type="submit" class="btn">Search</button>
                   </form>
-                </div>
+                </div> -->
               </div>
               <!-- container end -->
             </div>
             <!-- menu content end -->
 
             <!-- Search Block -->
-            <div class="gla_search_block">
+            <!-- <div class="gla_search_block">
               <div class="gla_search_block_link gla_search_parent">
                 <i class="ti ti-search"></i>
                 <ul>
@@ -146,7 +144,7 @@
                   </li>
                 </ul>
               </div>
-            </div>
+            </div> -->
             <!-- Search Block End -->
 
             <!-- Top Menu -->
@@ -180,9 +178,11 @@
                   <a href="/#gallery">Gallery</a>
                 </li>
                 <li>
+                  <!-- Peacock: #057a7a -->
+                  <!-- Burnt Orange: #CC5500 -->
                   <a
-                    href="/#rsvp_section"
-                    style="color: #057a7a; font-weight: bold; text-shadow: #001a1a -1px 1px;"
+                    href="#rsvp_section"
+                    style="color: #009a9a; font-weight: bold; text-shadow: #000 1px 1px;"
                     >R.S.V.P.</a
                   >
                 </li>
@@ -381,7 +381,7 @@
             </p>
             <h2>Things To Do</h2>
             <h4 class="gla_subtitle">A few of our favorite things to do in The Bay Area.</h4>
-            <ul style="text-align: left; margin: 0 auto;">
+            <ul class="things-to-do-list">
               <li><a href="https://walnutcreekdowntown.com/">Downtown Walnut Creek</a></li>
               <li><a href="https://www.broadwayplaza.com/">Broadway Plaza Shopping Center</a></li>
               <li><a href="https://www.ebmud.com/recreation/east-bay/lafayette-reservoir/">The Lafayette Reservoir</a></li>

@@ -348,6 +348,14 @@
     $(this).next().next('.gla_main_menu_content_menu').toggleClass('active')
     $(this).toggleClass('active')
   })
+  $('.toggle_menu').on('click', function (e) {
+    $('.gla_main_menu').next('.gla_main_menu_content').toggleClass('active')
+    $('.gla_main_menu')
+      .next()
+      .next('.gla_main_menu_content_menu')
+      .toggleClass('active')
+    $('.gla_main_menu').toggleClass('active')
+  })
 
   /* Section Background */
   $('.gla_image_bck').each(function () {
