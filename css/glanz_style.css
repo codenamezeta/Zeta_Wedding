@@ -81,6 +81,13 @@
   background-size: cover;
 }
 
+#program_banner {
+  height: 67vh;
+  background-image: url('../images/engagement-6.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
 .text-shadow {
   text-shadow: #000 1px 2px 4px;
 }
@@ -95,6 +102,17 @@
 
 .bigger-text {
   font-size: 1.33em;
+}
+
+hr.bar {
+  width: 44px;
+  height: 1em;
+}
+
+#program h3.gla_h3_title, 
+#program h4.gla_h4_title {
+  margin: 0;
+  padding: 0;
 }
 
 /* ! /My Custom CSS */
